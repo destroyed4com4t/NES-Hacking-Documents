@@ -1,0 +1,39 @@
+INVINCIBILITY CHEAT CODE VARIABLES:
+0x0026:FF		Invincibility Flag
+0x0028:01		3rd Flag For Invincibility Password (Failed Password Attempts)
+0x0029:02		2nd Flag for Invincibility Password (Demo Playthroughs)
+0x002A:04		1st Flag For Invincibility Password (Menu Cancels)
+
+STATS:
+0x0038:64		Current Health (HP)
+0x0039:64		Strength
+0x003A:64		Experience
+0x003B:64		Magic (MP)
+0x003C:09		Level
+0x0041:64		Max HP
+0x0042:64		Max MP
+
+ITEMS:
+0x0059:FF		Sword
+0x005A:FF		Shield
+0x005B:FF		Lamp
+0x005C:FF		Cross
+0x005D:FF		Medicine
+0x005E:FF		Pot
+0x005F:FF		Key
+0x0060:FF		Jewel
+0x0061:FF		Ring
+0x0062:FF		Ruby
+
+FAIRIES
+0x0064:FF		Fairy 1
+0x0065:FF		Fairy 2
+0x0066:FF		Fairy 3
+
+GAME EVENTS:
+0x0073:FF		River Drained
+0x0078:02		Counter Of Wizards Killed 
+0x0079:1F		Counter Of Sandworms Killed To Get Easter Eggs
+0x007D:01-05		Selected Magic (01-TURN, 02-FIRE, 03-ICE, 04-WAVE, 05-FLASH)
+0x007F:01		Golden March Easter Egg Flag
+0x0081:FF		Timer For Unlimited Magic
