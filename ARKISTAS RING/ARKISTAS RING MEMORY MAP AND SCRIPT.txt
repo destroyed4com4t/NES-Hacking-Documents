@@ -1,0 +1,120 @@
+0x0001:10	Invincibility
+0x0001:FF	Unlock Doors?
+
+0x0022:40	Fireballs Equipped (When Using Fire Wand)
+0x0030:XX	Stage Counter (Number Displayed Between Levels)
+0x0031:09	Continues
+
+0x03D0:XX	Stage (Actual Stage You Are On)
+0x03D3:07	Bow Level ($00-Short Bow, $01-Crossbow, $02-Middle Bow,
+			$03-Long Bow, $04-Giant Bow, $05-Great Bow,
+			$06-Elf Bow,$07-Ultimate Bow)
+			(Only reads bottom three nibbles, $08-0F repeat
+			the same progression as $00-07)
+0x03D4:FF	Arrow Level ($00-Short Arrow, $01-Cross Arrow, $02-Middle Arrow,
+			$03-Long Arrow, $04-Giant Arrow, $05-Great Arrow,
+			$06-Elf Arrow,$07-Ultimate Arrow)
+			(Only reads bottom three nibbles, $08-0F repeat
+			the same progression as $00-07)			
+0x03D5:06	All Armor Pieces ($01-Default, $02-Leather Armor, $03-Shield,
+				$04-Gauntlet,$05-Helmet,$06-Mantle,$07+-Glitch)
+0x03D6:0E	Health
+0x03D7:03	Bag/Max Item Slots ($00-Pouch,$01-Side Bag,$02-Back Pack,
+				$03-Holding Bag)
+
+ITEM SLOT MECHANICS:
+
+0x03D8:7F	Cure Potions (Value is a 7 digit binary number representing
+				slots in the inventory, when two values overlap
+ 				they become a different item)
+0x03D9:7F	Fire Wands (Value is a 7 digit binary number representing
+				slots in the inventory, when two values overlap
+ 				they become a different item)
+0x03DA:7F	Ninja Stunner (Value is a 7 digit binary number representing
+				slots in the inventory, when two values overlap
+ 				they become a different item)
+(0x03D8 
++ 0x03D9):7F	Thunder Wands
+
+(0x03D8
++ 0x03DA):7F	Holy Stick
+
+(0x03D9
++ 0x03DA):7F	Glitch Item (Displays Amulet, Kills Everything)
+
+(0x03D9
++ 0x03DA
++ 0x03DB):7F	Glitch Item (Displays Arkista's Ring, Turns The World Gray)
+
+
+0x03DB:09	Lives
+0x03DC:07	Quest Items ($01-Arkistas Ring, $02-Wealth Amulet, 
+				$04-Elf Mirror)
+
+0404:00		Enemy 1 HP
+0424:00		Enemy 2 HP
+0444:00		Enemy 3 HP
+0464:00		Enemy 4 HP
+0484:00		Enemy 5 HP
+
+VALUE		SLOT
+1		1000000
+2		0100000
+3		1100000
+4		0010000
+5		1010000
+6		0110000
+7		1110000
+8		0001000
+9		1001000
+a		0101000
+b		1101000
+c		0011000
+d		1011000	
+e		0111000	
+f		1111000
+10		0000100
+11		1000100
+12		0100100
+13		1100100
+14		0010100
+15		1010100
+16		0110100
+17		1110100
+18		0001100
+19		1001100
+1a		0101100
+1b		1101100
+1c		0011100
+1d		1011100
+1e		0111100
+1f		1111100
+20		0000010
+21		1000010
+22		0100010
+23		1100010
+
+As you can see, the slots represent the binary value of the number but in reverse. 7F fills up all of the slots.
+
+GAME SCRIPT:
+
+ADDRESS		TEXT
+000597		GAME START
+		CONTINUE
+		TM& 1989 AMERICAN SAMMY CORP
+		LICENSED BY NINTENDO OF AMERICA
+
+001352		NAME CHRISTINE
+		SEX FEMALE
+		FROM ARKISTA
+
+003D26		THANKS FOR HELPING ME SAVE ARKISTA'S RING.
+
+0060F9		SHORT LONG MIDDLE GREAT ELF BOW ARROW
+		BAG IN POUCH SIDE HOLDING
+		LEATHER ARMOR SHIELD GAUNTLET BREAST PLATE
+		HELMET MANTLE CROSS
+		GIANT ULTIMATE HEALING AMULET
+		WEALTH ELF MIRROR ARKISTA'S RING
+		POTION CHRIS BACK PACK CURE FIRE WAND
+		THUNDER NINJA STUNNER HOLY STICK OF LIFE
