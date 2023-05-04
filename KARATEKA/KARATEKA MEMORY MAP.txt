@@ -1,0 +1,47 @@
+0070:32		Does Not Activate Traps
+
+00E2:??		Controller Register 
+00E4:??			($00-Right, 
+			$01-Left, 
+			$02-Down, 
+			$03-Up, 
+			$04-Start, 
+			$05-Select,
+			$06-B, 
+			$07-A)
+
+0200:??		Player Status
+0201:??		Player Camera X Position
+0201:ff		Instantly Completes The Stage
+0202:??		Player Stance Enemy Will Not Attack, You Can Skip Enemy
+0202:00		Enemy Will Not Attack, You Can Skip Enemy
+0203:01		Player Map X Position
+0204:00		Player Map Y Position
+0205:00		Player Action State ($00-Nothing/Glitch, 
+				$01-Fighting Stance,
+				$02-Standing Stance,$03-Step Forward,
+				$04-Walk Backward(Fighting),
+				$05-Step Back(Fighting),
+				$06-Walk Back(Fighting),
+				$07-Kick,$08-Knee,
+				$09-Run Forward(Standing),
+				$0a-$0b-Sprint(Standing),
+				$0c-Figting Stance
+				$0d-Die,$0E-Fall Back,$0f-Bow
+				$10-Fall Off Cliff)
+0206:00		Player Animation Frame Counter
+0207:0f		Player Punch Type
+0209:0f		Player Hit Points
+
+0220:00		Enemy Status
+0221:00		Enemy Camera X Position
+0222:00		Enemy Stance
+0223:00		Enemy Map X Position
+0224:00		Enemy Map Y Position
+0225:00		Enemy Action State
+0227:01		Enemy Punch Type
+0228:01		Enemy Attack Type ($00-No Attack, 
+				$01-Kick, 
+				$02-Punch)
+0229:01		Enemy Hit Points
+
