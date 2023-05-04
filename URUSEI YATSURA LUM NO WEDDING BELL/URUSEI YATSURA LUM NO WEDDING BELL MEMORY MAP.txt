@@ -1,0 +1,24 @@
+0035:84		Floating (Can't Fall Through Floor, Can't Jump)
+0087:00		Invincibility
+00A4:01		School Outfit Activated
+00B9:09		Lives
+00C2:07		Items Collected At Chapel
+00C3:02		Shutaro Mendou/Katana Activated 1 of 2
+00DC:08		Shutaro Mendou/Katana Activated 2 of 2
+00EB:02		Onsen-Mark Activated
+00EC:02		Ushitora Form
+00F1:01		Ten-Chan Activated
+05D2:60		Ten-Chan Activation Timer
+0489:00		Items Never Go Away After You Grab Them
+049D:09		Number Of Items
+049F:01		Floor  ($05-Top Floor Infant School, $07-Top Floor Elementary,
+			$09-Top Floor Junior High, $0b-Top Floor High School
+			$0d-Top Floor Studio) 
+04A0:03		Stage  ($00-Infant School, $01-Elementary School,
+			$02-Junior High Shcool, $03-High School,
+			$04-Studio, $05-Chapel) 
+04A1:b0		Stage Timer/Flames 1 of 2
+04A2:00		Stage Timer/Flames 2 of 2
+05CC:FF		Lightning Barrier Turned On 1 of 2
+05CD:FF		Lightning Barrier Turned On 1 of 2
+
