@@ -1,0 +1,59 @@
+0062:09			Lives
+0064:00			Map
+006F:00			Cumulative Stage
+				(After $84, Stages Become Glitched)
+0070:00			Stage Type Flag
+0071:00			Round
+0072:00			Stage Map
+				($00 Start/Item Collection,
+				 $01 River Crossing,
+				 $02 Barrel Stage,
+				 $03 Ladder Stage,
+				 $04 Prisoner Rescue) 
+				(At $00, no items can be used,
+				 At $04, stage is dark. If you
+				 change flag to anything but $04 on a
+				 prisoner rescue stage, it removes
+				 the darkness.) 
+0073:00			Key Acquisition
+				($01 Initially, Set to $00 To Complete Stage)	
+0074:01			Key Location (Number Of Barrels To Destroy)
+				(If You Set To $01, Next Barrel Has Key)
+009F:09			Time (Seconds, Tens Digit)
+00A0:09			Time (Seconds, Ones Digit)
+00A1:09			Time (Minutes)
+00A2:09			Elapsed Time (Seconds, Tens Digit)
+00A3:09			Elapsed Time (Seconds, Ones Digit)
+00A4:09			Elapsed Time (Minutes, Tens Digit)
+00A5:09			Elapsed Time (Minutes, Ones Digit)
+00A6:09			TNT (Tens Digit)
+00A7:09			TNT (Ones Digit)
+00A8:09			Fuses (Tens Digit)
+00A9:09			Fuses (Ones Digit)
+00AC:09			Ladders
+00AD:09			Mines (Tens Digit)
+00AE:09			Mines (Ones Digit)
+00AF:09			Clippers
+
+00D2:09			Player Score (Ten Millions Digit)
+00D3:09			Player Score (Millions Digit)
+00D4:09			Player Score (Hundred Thousands Digit)
+00D5:09			Player Score (Ten Thousands Digit)
+00D6:09			Player Score (Thousands Digit)
+00D7:09			Player Score (Hundreds Digit)
+00D8:09			Player Score (Tens Digit)
+
+0108:09			High Score (Ten Millions Digit)
+0109:09			High Score (Millions Digit)
+010A:09			High Score (Hundred Thousands Digit)
+010B:09			High Score (Ten Thousands Digit)
+010C:09			High Score (Thousands Digit)
+010D:09			High Score (Hundreds Digit)
+010E:09			High Score (Tens Digit)
+
+0552:FF			Invincibile
+0632:FF			Prisoner Survival State
+				($00 Initially,
+				 $FF When Prisoner Rescued,
+				 $00 If Prisoner Dies)
+06D0:01			Prisoner Rescued
